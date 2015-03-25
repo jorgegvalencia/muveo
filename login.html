@@ -22,25 +22,41 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
-    <div class="container">
 
-      <form class="login">
-        <h2 class="login-heading">Conectate con tu cuenta</h2>
-        <label for="inputUsuario" class="sr-only">Nombre de usuario</label>
-        <input placeholder="Nombre de usuario" id="inputUsuario" class="form-control" required="" autofocus="" type="text">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input placeholder="Contraseña" id="inputPassword" class="form-control" required="" type="password">
-        <div class="checkbox">
-          <label>
-            <input value="remember-me" type="checkbox"> Recuerdame
-          </label>
+    <div id="header" class="page-header">
+      <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+          <div class="container">
+            <!-- <img lt="brand" src="images/login/preferences-system-search.png"> -->
+            <a id="brandName" class="navbar-brand" href="index.html"> Muveo </a>
+          </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Conectarse</button>
-      </form>
-
-    </div> <!-- /container -->
+        </div>
+      </nav>
+    </div>
+    <div class="loginBackground">
+    <div class="container">
+      <div class="panelLogin col-md-4">
+      <div class="row">
+        <form class="login">
+          <h2 class="login-heading">Conectate con tu cuenta</h2>
+          <label for="inputUsuario" class="sr-only">Nombre de usuario</label>
+          <input placeholder="Nombre de usuario" id="inputUsuario" class="form-control" required="" autofocus="" type="text">
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input placeholder="Contraseña" id="inputPassword" class="form-control" required="" type="password">
+          <div class="checkbox">
+            <label>
+              <input value="remember-me" type="checkbox"> Recuerdame
+            </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Conectarse</button>
+        </form>
+      </div>
+      </div> <!-- /container -->
+    </div>
+  </div>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

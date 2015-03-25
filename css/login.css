@@ -1,9 +1,22 @@
-/*body {
-  padding-top: 40px;
-  padding-bottom: 40px;
+body {
   background-color: #eee;
 }
 
+.page-header {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.panelLogin {
+  padding: 20px;
+}
+
+.loginBackground {
+  background-image: url('../images/login/background_login_test2.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -37,4 +50,4 @@
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}*/
+}
