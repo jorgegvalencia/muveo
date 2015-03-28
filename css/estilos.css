@@ -4,6 +4,10 @@
     border: 0px;
 }
 
+#navigationHeader{
+    margin-bottom: 0px;
+}
+
 body{
     height: 100%;
     width: 100%;
@@ -12,6 +16,18 @@ body{
 
 #subtituloPrincipal{
     font: bold 14px verdana, sans-serif;
+}
+
+#container-full{
+    background-image: url('http://i.imgur.com/NowYKD7.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #000000;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 150px;
 }
 
 #espacioTitulo{
@@ -38,17 +54,18 @@ body{
     width: 50%;
     height: 20%;
     border: solid;
+    border-width: 0 0 0 0;
+    margin: 5px;
 }
 
 #trabajo{
     width: 50%;
     height: 20%;
     border: solid;
+    border-width: 0 0 0 0;
+    margin: 5px;
 }
 
 #lema{
     text-align: center;
 }
-
-
-
