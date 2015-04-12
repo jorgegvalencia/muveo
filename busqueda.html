@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!--Estilos-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/busqueda.css">
 
@@ -22,40 +24,50 @@
     <![endif]-->
 </head>
 <body>
-<!-- top navbar -->
-<div class="navbar navbar-default navbar-fixed-top">
+<!-- Header -->
+<nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
+            <!-- Boton login para dispositivos moviles-->
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Muveo</a>
-
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="images/icon_white.png"></a>
         </div>
-
-        <div class="navbar-collapse collapse" id="navbar-main">
-
+        <!-- Login Form with button -->
+        <div id="navbar-main" class="collapse navbar-collapse" >
             <form class="navbar-form navbar-right" role="search" action="php/process_login.php" method="post" name="login_form">
                 <div class="form-group">
-                    <input type="text" name="email" class="form-control" placeholder="Usuario">
+                    <!-- Username -->
+                    <input class="form-control" name="username" placeholder="Usuario" type="text">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="password" class="form-control" placeholder="Contraseña">
+                    <!-- Password -->
+                    <input class="form-control" name="password" placeholder="Contraseña" type="password">
                 </div>
-                <button type="submit" class="btn btn-default" value="Login" onclick="formhash(this.form, this.form.password);">Iniciar sesión</button>
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary" value="Login" onclick="formhash(this.form, this.form.password)">Iniciar sesión</button>
             </form>
-
         </div>
     </div>
-</div>
-
+</nav>
+<!-- Header End-->
 <div class="container">
     <div class="row row-offcanvas row-offcanvas-left">
         <!-- sidebar -->
         <div class="col-xs-12 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <ul class="nav" style="background: #ffffff">
+                <li>Precio: <br><br><input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/></li>
+                <br>
+                <li><span id="ex6CurrentSliderValLabel">Comentarios: <span id="ex6SliderVal">3 </span></span><input id="ex7-enabled" type="checkbox"/>
+                    <input id="ex6" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-enabled="false" data-slider-value="0"/&t
+                </li>
+                <br>
+                <br>
                 <li><a href="#">Everyone</a></li>
                 <li><a href="#">Individual</a></li>
                 <li><a href="#">Companies</a></li>
@@ -95,10 +107,10 @@
                                     </div>
                                     <div class="col-xs-12 col-md-8 section-box">
                                         <h3><a href="busqueda.html" target="_blank">
-                                            Clases Particulares Desarrollo Web </a>
+                                            Clases particulares desarrollo web </a>
                                         </h3>
                                         <p>
-                                            El mejor profesor (cariñosa osa) para que aprendas HTML/CSS/JS en tan solo 6 días!</p>
+                                            Aprende HTML/CSS/JS en tan solo 6 días!</p>
                                         <hr />
                                         <div class="row rating-desc">
                                             <div class="col-md-12">
@@ -111,7 +123,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-2 section-box hireButton">
-                                        <a href="#" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
+                                        <a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +156,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-2 section-box hireButton">
-                                        <a href="#" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
+                                        <a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +187,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-2 section-box hireButton">
-                                        <a href="#" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
+                                        <a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +218,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-2 section-box hireButton">
-                                        <a href="#" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
+                                        <a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +249,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-2 section-box hireButton">
-                                        <a href="#" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
+                                        <a href="#" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-right"></span> Hire</a>
                                     </div>
                                 </div>
                             </div>
@@ -313,6 +325,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script>
+    $("#ex2").slider({});
+    $("#ex6").slider();
+    $("#ex6").on("slide", function(slideEvt) {
+        $("#ex6SliderVal").text(slideEvt.value);
+    });
+    // With JQuery
+    $("#ex6").slider();
+    $("#ex7-enabled").click(function() {
+        if(this.checked) {
+            // With JQuery
+            $("#ex6").slider("enable");
+        }
+        else {
+            // With JQuery
+            $("#ex6").slider("disable");
+        }
+    });
+</script>
 
 </body>
 </html>
